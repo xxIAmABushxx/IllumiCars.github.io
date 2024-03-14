@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Završni rad Webstranica</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--Burger meni (gladan sam)-->
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="#about-us">O nama</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#zahtjevi">Zahtjevi</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!--Header i navigacija-->
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="img/logo.svg" alt="illumi cars">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="#about-us">O nama</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
+                    <li><a href="#zahtjevi">Zahtjevi</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-main-social">
+            <a href="www.facebook.com"><div class="header-main-social-fb"></div></a>
+            <a href="www.instagram.com"><div class="header-main-social-in"></div></a>
+            <div class="burger-menu-btn"></div>
+        </div>
+    </header>
+
+<!--Pozadina, intro i quotes-->
+    <main>
+        <div class="back-video">
+            <video autoplay loop muted>
+                <source src="img/rasema.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-intro">
+            <h2>Illumi Cars</h2>
+            <p>Dobrodošli u Illumi Cars, vašeg partnera za "custom" dijelove i dodatke za automobile. Kod Illumi Cars, specijaliziramo se za izradu personaliziranih dijelova i dodataka koji će poboljšati performanse i estetiku vašeg vozila. S predanošću preciznom inženjeringu i kvalitetnom izradom, pružimo rješenja koja će unaprijediti vaše iskustvo vožnje.</p>
+            <a href="#galerija">Naši obavljeni poslovi</a>
+        </div>
+        <div class="main-quotes">
+            <p>"Life is to short to drive<br>boring cars so live your life <br> to the fullist"</p>
+            <p>"Speed has never killed anyone.<br>Suddenly becoming stationary, that's what gets you."<br><br>- Jeremy Clarkson</p>
+
+        </div>
+    </main>
+    <!--Kategorija-->
+    <section class="index-category" id="category">
+        <p>Kategorije</p>
+        <a href="#about-us" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Zašto mi?</h3>
+        </a>
+        <a href="#zahtjevi"  class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Zahtjevi</h3>
+        </a>
+        <a href="#galerija"  class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Slike</h3>
+        </a>
+    </section>
+
+    <!-- About Us -->
+    <section class="index-about" id="about-us">
+        <div class="wrapper-main index-about-flex">
+            <div class="index-about-img">
+                <img src="img/index-img2.jpg" alt="slika-about us">
+            </div>
+            <div class="index-about-text">
+                <h2>O nama</h2>
+                <p>
+                    Illumi Cars je tvrtka locirana u Rijeci, koja se ističe po pružanju personaliziranih custom dizajnova za automobile.<br> Naš tim stručnjaka predan je stvaranju jedinstvenih i kreativnih rješenja koja ističu individualnost i stil svakog našeg klijenta.<br><br> Bez obzira na vaše želje, od suptilnih detalja do smjelih transformacija, mi smo ovdje da ostvarimo vaše vizije i pretvorimo vaš automobil u remek-djelo na cesti.</p>
+                <a href="#kontakt">Saznajte gdje nas pronaći</a>
+            </div>
+            <div class="index-about-skill">
+                <p>Omatanje Automobila</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill omauta"></div>
+                </div>
+            <div class="index-about-skill">
+                <p>Dodavanje Zvuka</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill zvuk"></div>
+                </div>
+            <div class="index-about-skill">
+                <p>Carbon Fiberrrrr</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill carbon"></div>
+                </div>
+                </div>
+            <div class="index-about-skill">
+                <p>Felge</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill felge"></div>
+                </div>
+            <div class="index-about-skill">
+                <p>Posebna Svijetla</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill svijetla"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--slajder-galerija-->
+<section class="index-galerija" id="galerija">
+    <p>Galerija</p>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+            <input type="radio" name="radio-btn" id="radio9">
+            <input type="radio" name="radio-btn" id="radio10">
+            <input type="radio" name="radio-btn" id="radio11">
+            <input type="radio" name="radio-btn" id="radio12">
+        
+            <div class="slide first">
+                <img src="img/galerija/audi.jpg" alt="">
+            </div>
+            <div class="slide-2">
+                <img src="img/galerija/bmw1.jpg" alt="">
+            </div>
+            <div class="slide-3">
+                <img src="img/galerija/bmw2.jpg" alt="">
+            </div>
+            <div class="slide-4">
+                <img src="img/galerija/bmw3.jpg" alt="">
+            </div>
+            <div class="slide-5">
+                <img src="img/galerija/bmw4.jpg" alt="">
+            </div>
+            <div class="slide-6">
+                <img src="img/galerija/car1.jpg" alt="">
+            </div>
+            <div class="slide-7">
+                <img src="img/galerija/car2.jpg" alt="">
+            </div>
+            <div class="slide-8">
+                <img src="img/galerija/car3.jpg" alt="">
+            </div>
+            <div class="slide-9">
+                <img src="img/galerija/car4.jpg" alt="">
+            </div>
+            <div class="slide-10">
+                <img src="img/galerija/golf.jpg" alt="">
+            </div>
+            <div class="slide-11">
+                <img src="img/galerija/mercedes.jpg" alt="">
+            </div>
+            <div class="slide-12">
+                <img src="img/galerija/saxo2.jpg" alt="">
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+            <label for="radio9" class="manual-btn"></label>
+            <label for="radio10" class="manual-btn"></label>
+            <label for="radio11" class="manual-btn"></label>
+            <label for="radio12" class="manual-btn"></label>
+        </div>
+    </div>
+</section>
+
+<!--Zahtjevi-->
+
+<section class="index-zahtjevi" id="zahtjevi">
+    <form action="zahtjevi.html" method="get">
+
+        <label for="cartype">Koji auto Vas zanima?</label>
+        <select name="cartype" id="cartype">
+            <option value="Drugo">Drugo</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Honda">Honda</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Ford">Ford</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Rimac">Rimac</option>
+        </select>
+<br><br>
+        <label>Odabir servisa</label>
+        <br>
+        <input type="checkbox" id="omatanjeauta" name="servisi" value="Omatanje Automobila">
+        <label for="omatanjeauta">Omatanje Automobila</label>
+        <br>
+        <input type="checkbox" id="dodavanjezvuka" name="servisi" value="Dodavanje Zvuka">
+        <label for="dodavanjezvuka">Dodavanje Zvuka</label>
+        <br>
+        <input type="checkbox" id="carbon" name="servisi" value="Carbon Fiberrrrr">
+        <label for="carbon">Carbon Fiberrrrr</label>
+        <br>
+        <input type="checkbox" id="felge" name="servisi" value="Felge">
+        <label for="felge">Felge</label>
+        <br>
+        <input type="checkbox" id="posebnasvijetla" name="servisi" value="Posebna Svijetla">
+        <label for="posebnasvijetla">Posebna Svijetla</label>
+        <br>
+<br><br>
+        <label for="poruka">Dodatni zahtjevi</label>
+        <textarea name="Poruka" id="poruka" placeholder="Želim da mi spustite auto...."></textarea>
+<br><br>
+        <label for="mail">Mail</label>
+        <input type="email" id="email" name="mail" placeholder="Vaš Mail">
+<br><br>
+        <br><br>
+        <button type="submit" value="submit">Pošaljite podatke</button>
+    </form>
+</section>
+
+<!--Kontakt-->
+
+    <section class="index-kontakt" id="kontakt">
+        <h3>Kontakt</h3>
+        <br>
+        <p>Imate li pitanja ili nejasnoće u vezi našeg servisa? Ne brinite, tim IllumiCars je tu da vam pomogne! Bez obzira trebate li savjet o dizajnu, informacije o našim uslugama ili želite zakazati sastanak, slobodno nas kontaktirajte. Možete nas pozvati na broj 091 308 2705 ili nam poslati e-mail na <a href="mailto:lzidaric@student.uniri.hr">illumicars@gmail.com.</a> Također nas možete posjetiti na našoj adresi Gajeva 1, Rijeka. Naš stručni tim će vam rado odgovoriti na sva vaša pitanja i pružiti vam sve potrebne informacije. Uz IllumiCars, vaša vizija personaliziranog automobila postaje stvarnost!</p>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.135319517706!2d14.452706412246812!3d45.325889842535275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a0fe18bc69d3%3A0xf9da3d14ba747efb!2sGajeva%201%2C%2051000%2C%20Rijeka!5e0!3m2!1shr!2shr!4v1710446204428!5m2!1shr!2shr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </section>
+
+    <!--Video-->
+
+    <section class="index-video" id="video">
+
+        <video class="my-video" src="img/video/0314.mp4" controls muted loop></video>
+        <br>
+        <button onclick="playPause()">Play/Pause</button>
+
+    </section>
+
+    <!--Footer-->
+<footer class="footer-main">
+    <div class="wrapper-main footer-main-flex">
+        <div class="footer-kupci">
+            <img src="img/kupci/kupac1.jpg" alt="kupac 1">
+            <p>"Svaki detalj je pažljivo osmišljen i izveden, rezultat je jedinstven i premašio je sva moja očekivanja."</p>
+        </div>
+        <div class="footer-kupci">
+            <img src="img/kupci/kupac3.jpg" alt="kupac 3">
+            <p>"Susjedi mi se žale odkad sam odveo auto u Illumi Cars da je preglasan po cesti. Pa šta, ja uživam, a oni ne spavaju." </p>
+        </div>
+
+
+        <div class="footer-kupci">
+            <img src="img/kupci/kupac5.jpg" alt="kupac 5">
+            <p>"Jao cure, ako se želite osjećati kao kraljica na cesti morate ići u Illumi Cars. Dosadna zelena više nije IN, Barbi roza drage moje je "</p>
+        </div>
+
+        <a class="footer-gettogal" href="#galerija">Ne propustite Galeriju</a>
+        
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="#index.html">Početna</a></li>
+                <li><a href="#about-us">O nama</a></li>
+                <li><a href="#galerija">Galerija</a></li>
+                <li><a href="#zahtjevi">Zahtjevi</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <ul>
+                <li><a href="#category">Zašto mi?</a></li>
+                <li><a href="#category">Zahtjevi</a></li>
+                <li><a href="#category">Slike</a></li>
+            </ul>
+            <ul>
+                <li><p>Vaš odabir za najbolje <br>dijelove za aute</p></li>
+            </ul>
+            <ul>
+                <li><p>Kontakt</p></li>
+                <li><p>TEL: 091 308 2705</p></li>
+                <li><p>illumicars@gmail.com</p></li>
+                <li><p>Gajeva 1. Rijeka</p></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        let myVideo = document.querySelector(".my-video");
+
+        function playPause() {
+            if (myVideo.paused) {
+                myVideo.play();
+            }
+            else {
+                myVideo.pause();
+            }
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

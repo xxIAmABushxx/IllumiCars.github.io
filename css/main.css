@@ -1,0 +1,356 @@
+:root {
+    --site-color-1: darkcyan;
+    --site-color-1-hover: lightseagreen;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1a253a;
+}
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/instagram-color.png) url(../img/facebook-color.png);
+}
+
+.wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.9rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Roboto;
+}
+
+a {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 80px;
+    align-self: center;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 10px;
+    font-family: "Roboto", sans-serif;
+    line-height: 80px;
+    color: black;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+    color: lightseagreen;
+}
+
+.header-main-social {
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-social-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-social-fb:hover {
+    background-image: url(../img/facebook-color.png);
+}
+
+.header-main-social-in {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-social-in:hover {
+    background-image: url(../img/instagram-color.png);
+}
+
+/* Footer */
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-kupci {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-kupci img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+
+}
+
+.footer-kupci p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px 20px 0;
+}
+
+.footer-gettogal {
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-weight: 600;
+    margin: 40px 0 60px;
+    transition: all ease-in-out 200ms;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.footer-gettogal:hover {
+    border: 2px solid var(--site-color-1-hover);
+}
+
+.footer-sitemap {
+    padding-top: 60px;
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a {
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.6;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-1);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1),
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 380px;
+    text-align: center;
+}
+
+.footer-sitemap p {
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right;
+}
+
+.burger-menu,
+.burger-menu-btn {
+    display: none;
+}
+
+
+
+/* <600px, 601px, 768px, 992px, 1200px */
+
+@media only screen and (max-width: 600px) {
+
+    .burger-menu-btn {
+        display: block;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/icone/burger-menu.png.png), url(../img/icone/close.png.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+
+    .burger-menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 900;
+        background-color: #111;
+    }
+
+    .burger-menu ul {
+        width: 100%;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .burger-menu ul li {
+        flex-basis: 100%;
+        border-top: 2px solid #000;
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000;
+    }
+
+    .burger-menu ul li a {
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .wrapper-main {
+        width: 80%;
+    }
+
+    .header-main-logo {
+        padding-left: 20px;
+    }
+
+    .header-main-nav {
+        display: none;
+    }
+
+    .header-main-social {
+        padding-right: 0px;
+
+    }
+
+    /* Footer */
+
+    .footer-main-flex {
+        width: 80%;
+    }
+
+    .footer-kupci {
+        display: none;
+    }
+
+    .footer-gettogal {
+        margin: 0 0 60px;
+    }
+
+    .footer-sitemap {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+
+    .footer-sitemap ul:nth-child(1) {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .footer-sitemap ul:nth-child(1),
+    .footer-sitemap ul:nth-child(2),
+    .footer-sitemap ul:nth-child(3) {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-sitemap p {
+        padding: 0 20px;
+    }
+
+    .footer-sitemap ul:nth-child(4) p {
+        text-align: center;
+    }
+}
